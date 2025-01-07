@@ -4,21 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftRational",
+    name: "swift-rational",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SwiftRational",
-            targets: ["SwiftRational"]),
+            name: "Rational",
+            targets: ["Rational", "IntExtensions"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftRational"),
+            name: "Rational"),
         .testTarget(
             name: "SwiftRationalTests",
-            dependencies: ["SwiftRational"]
+            dependencies: ["Rational", "IntExtensions"]
         ),
     ]
 )
