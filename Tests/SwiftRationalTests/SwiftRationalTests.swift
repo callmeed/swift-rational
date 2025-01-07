@@ -7,6 +7,7 @@ import Testing
     #expect(r1.numerator == 3)
     #expect(r1.denominator == 4)
     #expect(r1.description == "¾")
+    print(r1)
     
     // String initialization
     let r2 = Rational("1/2")
@@ -24,5 +25,12 @@ import Testing
     let r4 = Rational(4, 1)
     let i4 = 4
     #expect(r4 == i4.toRational())
+    
+    // Sum
+    let sum = Rational(1, 3) + Rational(1, 6)
+    #expect(sum.numerator == 1)
+    #expect(sum.denominator == 2)
+    #expect(sum.description == "½")
+    
     
 }
